@@ -9,7 +9,7 @@ const metrics = [
 
 const AnalyticsSection = () => {
   return (
-    <section id="analytics" className="py-24 relative overflow-hidden">
+    <section id="analytics" className="py-24 relative overflow-hidden bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
@@ -18,7 +18,7 @@ const AnalyticsSection = () => {
               <TrendingUp className="w-4 h-4 text-primary" />
               <span className="text-sm text-primary font-medium">Analytics & Insights</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
               Data-driven decisions, <span className="gradient-text">real-time results</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
@@ -29,7 +29,7 @@ const AnalyticsSection = () => {
             {/* Mini feature list */}
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <div className="w-2 h-2 rounded-full bg-primary" />
                 </div>
                 <div>
@@ -38,7 +38,7 @@ const AnalyticsSection = () => {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <div className="w-2 h-2 rounded-full bg-primary" />
                 </div>
                 <div>
@@ -47,7 +47,7 @@ const AnalyticsSection = () => {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <div className="w-2 h-2 rounded-full bg-primary" />
                 </div>
                 <div>
@@ -61,9 +61,9 @@ const AnalyticsSection = () => {
           {/* Right - Analytics preview card */}
           <div className="relative">
             {/* Glow effect */}
-            <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl" />
+            <div className="absolute -inset-4 bg-primary/5 rounded-3xl blur-2xl" />
             
-            <div className="relative p-6 md:p-8 rounded-3xl card-elevated border border-border/50">
+            <div className="relative p-6 md:p-8 rounded-3xl bg-background border border-border shadow-xl">
               {/* Chart header */}
               <div className="flex items-center justify-between mb-6">
                 <div>
@@ -89,7 +89,7 @@ const AnalyticsSection = () => {
               {/* Metrics row */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {metrics.map((metric) => (
-                  <div key={metric.label} className="text-center p-3 rounded-xl bg-secondary/50">
+                  <div key={metric.label} className="text-center p-3 rounded-xl bg-secondary">
                     <div className="text-2xl font-bold text-foreground">{metric.value}</div>
                     <div className="text-xs text-muted-foreground">{metric.label}</div>
                     <div className="text-xs text-primary font-medium mt-1">{metric.change}</div>

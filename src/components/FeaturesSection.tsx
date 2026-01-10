@@ -42,7 +42,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-24 relative">
+    <section id="features" className="py-24 relative bg-secondary/30">
       <div className="container mx-auto px-6">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -50,7 +50,7 @@ const FeaturesSection = () => {
             <Zap className="w-4 h-4 text-primary" />
             <span className="text-sm text-primary font-medium">Powerful Features</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">
             Everything you need to <span className="gradient-text">engage customers</span>
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -63,7 +63,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={feature.title}
-              className="group p-6 rounded-2xl card-elevated border border-border/50 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+              className="group p-6 rounded-2xl bg-background border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">

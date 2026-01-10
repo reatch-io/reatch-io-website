@@ -2,7 +2,7 @@ import logo from "@/assets/reatch-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border/50 py-12">
+    <footer className="border-t border-border bg-secondary/30 py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
             © 2024 Reatch.io. All rights reserved.
           </p>

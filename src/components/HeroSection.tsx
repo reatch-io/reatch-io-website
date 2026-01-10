@@ -3,22 +3,22 @@ import { ArrowRight, Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-gradient-to-b from-background via-secondary/30 to-background">
       {/* Background glow effects */}
-      <div className="absolute inset-0 hero-glow opacity-50" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div className="absolute inset-0 hero-glow opacity-70" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-border/50 mb-8 fade-in-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 fade-in-up">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm text-muted-foreground">Now with WhatsApp Business API</span>
+            <span className="text-sm text-primary font-medium">Now with WhatsApp Business API</span>
           </div>
           
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 fade-in-up" style={{ animationDelay: '0.1s' }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 fade-in-up text-foreground" style={{ animationDelay: '0.1s' }}>
             Engage Smarter,
             <br />
             <span className="gradient-text">Not Harder</span>
@@ -35,7 +35,7 @@ const HeroSection = () => {
             <Button variant="hero" size="xl">
               Start Free Trial <ArrowRight className="w-5 h-5 ml-1" />
             </Button>
-            <Button variant="glass" size="xl">
+            <Button variant="outline" size="xl">
               <Play className="w-5 h-5 mr-1" /> Watch Demo
             </Button>
           </div>

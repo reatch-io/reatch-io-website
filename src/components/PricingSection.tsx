@@ -45,12 +45,8 @@ const PricingSection = () => {
 
         {/* Custom Calculator */}
         <div className="max-w-2xl mx-auto bg-card rounded-2xl border border-border p-8">
-          <h3 className="text-2xl font-bold text-foreground text-center mb-6">
-            Custom Amount
-          </h3>
-          <p className="text-muted-foreground text-center mb-8">
-            Need a specific number of messages? Calculate your price below.
-          </p>
+          <h3 className="text-2xl font-bold text-foreground text-center mb-6">Amount of messages</h3>
+          <p className="text-muted-foreground text-center mb-8">Calculate your price below for whatever number of messages you need</p>
 
           <div className="space-y-6">
             <div>

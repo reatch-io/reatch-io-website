@@ -40,7 +40,41 @@ const PricingSection = () => {
 
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-          {pricingTiers.map(tier => {})}
+          {pricingTiers.map((tier) => (
+            <div
+              key={tier.name}
+              className={`relative bg-card rounded-2xl border p-8 ${
+                tier.popular ? "border-primary shadow-lg scale-105" : "border-border"
+              }`}
+            >
+              {tier.popular && (
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
+                  Most Popular
+                </span>
+              )}
+              <h3 className="text-xl font-bold text-foreground mb-2">{tier.name}</h3>
+              <div className="mb-4">
+                <span className="text-4xl font-bold text-foreground">${tier.price}</span>
+              </div>
+              <p className="text-muted-foreground mb-6">
+                {tier.messages.toLocaleString()} messages
+              </p>
+              <ul className="space-y-3 mb-8">
+                {tier.features.map((feature) => (
+                  <li key={feature} className="flex items-center gap-2 text-muted-foreground">
+                    <Check className="w-4 h-4 text-primary" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <Button
+                variant={tier.popular ? "hero" : "outline"}
+                className="w-full"
+              >
+                Get Started <ArrowRight className="w-4 h-4" />
+              </Button>
+            </div>
+          ))}
         </div>
 
         {/* Custom Calculator */}

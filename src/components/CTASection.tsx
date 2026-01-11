@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import logo from "@/assets/reatch-logo.png";
-
 const CTASection = () => {
-  return (
-    <section className="py-24 relative overflow-hidden">
+  return <section className="py-24 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-primary/10" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
@@ -38,12 +36,10 @@ const CTASection = () => {
           
           {/* Trust indicators */}
           <p className="text-sm text-muted-foreground mt-8">
-            ✓ 14-day free trial &nbsp;&nbsp; ✓ No credit card required &nbsp;&nbsp; ✓ Cancel anytime
+            ✓ 14-day free trial    ✓ Cancel anytime
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;

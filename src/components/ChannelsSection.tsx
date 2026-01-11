@@ -3,7 +3,7 @@ const channels = [{
   icon: Mail,
   name: "Email",
   color: "from-[hsl(280_85%_55%)] to-[hsl(260_75%_50%)]",
-  features: ["Custom domain verification", "HTML & plain text templates", "Open & click tracking", "Bounce management", "A/B testing support"]
+  features: ["Custom domain verification", "HTML & plain text templates", "Open & click tracking", "Bounce management", "A/B testing support (coming soon)"]
 }, {
   icon: MessageCircle,
   name: "WhatsApp",

@@ -1,4 +1,6 @@
 import { Mail, MessageCircle, Check } from "lucide-react";
+import { useEffect } from "react";
+
 const channels = [{
   icon: Mail,
   name: "Email",
@@ -11,6 +13,16 @@ const channels = [{
   features: ["Business API integration", "Template messages", "Media rich content", "Quick replies & buttons"]
 }];
 const ChannelsSection = () => {
+
+    useEffect(() => {
+        if (window.location.hash === "#channels") {
+          const el = document.getElementById("channels");
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      }, []);
+
   return <section id="channels" className="py-24 relative">
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}

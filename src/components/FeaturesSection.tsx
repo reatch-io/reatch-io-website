@@ -6,6 +6,7 @@ import {
   Code,
   Shield
 } from "lucide-react";
+import { useEffect } from "react";
 
 const features = [
   {
@@ -41,6 +42,16 @@ const features = [
 ];
 
 const FeaturesSection = () => {
+
+        useEffect(() => {
+                if (window.location.hash === "#features") {
+                  const el = document.getElementById("features");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                  }
+                }
+              }, []);
+
   return (
     <section id="features" className="py-24 relative bg-secondary/30">
       <div className="container mx-auto px-6">

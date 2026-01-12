@@ -1,4 +1,5 @@
 import { TrendingUp, Eye, MousePointer, Users } from "lucide-react";
+import { useEffect } from "react";
 
 const metrics = [
   { label: "Total Sent", value: "1.2M", change: "+12%", icon: TrendingUp },
@@ -8,6 +9,16 @@ const metrics = [
 ];
 
 const AnalyticsSection = () => {
+
+    useEffect(() => {
+            if (window.location.hash === "#analytics") {
+              const el = document.getElementById("analytics");
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+              }
+            }
+          }, []);
+
   return (
     <section id="analytics" className="py-24 relative overflow-hidden bg-secondary/30">
       <div className="container mx-auto px-6">

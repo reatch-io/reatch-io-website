@@ -1,11 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const PricingSection = () => {
   const [customMessages, setCustomMessages] = useState(10000);
   const pricePerMessage = 0.09;
   const customPrice = (customMessages * pricePerMessage).toFixed(2);
+
+    useEffect(() => {
+        if (window.location.hash === "#pricing") {
+          const el = document.getElementById("pricing");
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      }, []);
 
   return (
     <section id="pricing" className="py-24 bg-muted/30">

@@ -15,7 +15,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">1. Acceptance of Terms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By accessing or using the Reatch.io platform ("Reatch", "we", "our", or "us"), you agree to be bound by these
+                  By accessing or using the ReatchIO platform ("Reatch", "we", "our", or "us"), you agree to be bound by these
                   Terms & Conditions and all applicable laws and regulations. If you do not agree, you must not use our Services.
                 </p>
               </section>
@@ -23,7 +23,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">2. Description of Services</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Reatch.io provides a customer engagement platform that enables businesses to communicate with their customers
+                  ReatchIO provides a customer engagement platform that enables businesses to communicate with their customers
                   through channels such as email and WhatsApp. Our Services include message delivery, campaign management,
                   analytics, and related engagement tools.
                 </p>
@@ -60,7 +60,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">5. Payments, Billing & Refunds</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Reatch.io operates on a subscription and/or usage-based pricing model. Fees are charged in advance and are
+                  ReatchIO operates on a subscription and/or usage-based pricing model. Fees are charged in advance and are
                   non-refundable, except where required by law or as stated in our Refund Policy. Message credits are deducted
                   upon use, including attempted or failed deliveries. We reserve the right to change pricing with prior notice.
                 </p>
@@ -70,7 +70,7 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-semibold text-foreground mb-4">6. Message Delivery Disclaimer</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Message delivery is dependent on third-party providers, recipient networks, and user data accuracy.
-                  Reatch.io does not guarantee message delivery or response rates and is not responsible for blocked,
+                  ReatchIO does not guarantee message delivery or response rates and is not responsible for blocked,
                   filtered, or undelivered messages.
                 </p>
               </section>
@@ -78,7 +78,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">7. Intellectual Property</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  All content, software, and platform features are owned by Reatch.io or its licensors and are protected
+                  All content, software, and platform features are owned by ReatchIO or its licensors and are protected
                   by intellectual property laws. You may not copy, modify, distribute, or reverse engineer any part of the
                   Services without written permission.
                 </p>
@@ -87,7 +87,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-foreground mb-4">8. Limitation of Liability</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  To the maximum extent permitted by law, Reatch.io shall not be liable for any indirect, incidental,
+                  To the maximum extent permitted by law, ReatchIO shall not be liable for any indirect, incidental,
                   consequential, or punitive damages, including loss of profits, data, or business opportunities,
                   arising from your use of the Services.
                 </p>

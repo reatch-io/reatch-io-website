@@ -21,55 +21,56 @@ const RefundPolicy = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">2. Subscription Refunds</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">2. Refund Window</h2>
               <p className="leading-relaxed">
-                Subscription fees are generally non-refundable. Once a subscription period has started,
-                we do not offer refunds for unused time, partial months, or early cancellations.
-              </p>
-              <p className="leading-relaxed mt-3">
-                You may cancel your subscription at any time, and your access will remain active until the end of the current billing cycle.
+                Refund requests must be submitted within <strong>7 calendar days</strong> of the original purchase date.
+                Any requests submitted after this period will be automatically rejected.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">3. Message Credits & Usage-Based Charges</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">3. Subscription Refunds</h2>
               <p className="leading-relaxed">
-                Message credits and usage-based charges (such as email or WhatsApp messages sent) are non-refundable once consumed.
-                This includes successfully sent, attempted, or queued messages.
+                All subscription fees are non-refundable. Once a subscription period has started,
+                no refunds are provided for unused time, partial months, or early cancellations.
               </p>
               <p className="leading-relaxed mt-3">
-                Due to the nature of communication services and third-party provider costs, we cannot reverse or refund message usage.
+                You may cancel your subscription at any time. Your access will remain active until the end of the current billing cycle.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">4. Failed or Undelivered Messages</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">4. Message Credits & Usage-Based Charges</h2>
               <p className="leading-relaxed">
-                Reatch.io does not guarantee message delivery, as delivery depends on external providers,
-                recipient networks, and user data quality. Charges may still apply even if a message is not delivered.
+                All message credits and usage-based charges are non-refundable once purchased or consumed.
+                This includes sent, attempted, queued, failed, or undelivered messages.
               </p>
               <p className="leading-relaxed mt-3">
-                Refunds are not provided for failed, blocked, or undelivered messages unless the failure was caused by a verified system error on our side.
+                Message usage cannot be reversed or refunded under any circumstances.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">5. Exceptional Refund Cases</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">5. Message Delivery</h2>
               <p className="leading-relaxed">
-                Refunds may be considered in rare cases such as:
+                Reatch.io does not guarantee message delivery. Charges apply regardless of delivery status,
+                recipient response, or network conditions.
               </p>
-              <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
-                <li>Duplicate charges due to a billing system error</li>
-                <li>Service unavailability caused solely by Reatch.io for an extended period</li>
-                <li>Incorrect charges confirmed by our support team</li>
-              </ul>
               <p className="leading-relaxed mt-3">
-                Any approved refunds will be processed back to the original payment method.
+                No refunds are provided for blocked, filtered, delayed, or undelivered messages.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">6. Free Trials</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">6. Billing Errors</h2>
+              <p className="leading-relaxed">
+                All charges are final. No refunds are issued for billing disputes, duplicate charges,
+                service interruptions, or incorrect usage claims.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">7. Free Trials</h2>
               <p className="leading-relaxed">
                 Free trials are provided for evaluation purposes only.
                 No refunds apply to free trial usage or expired trial periods.
@@ -77,15 +78,15 @@ const RefundPolicy = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">7. Chargebacks & Disputes</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">8. Chargebacks & Disputes</h2>
               <p className="leading-relaxed">
-                If you believe a charge is incorrect, please contact us before initiating a chargeback.
-                Unresolved chargebacks may result in account suspension.
+                Initiating chargebacks or payment disputes may result in immediate account suspension
+                and permanent service termination.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">8. Contact Us</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">9. Contact Us</h2>
               <p className="leading-relaxed">
                 If you have any questions about this Refund Policy, please contact us at{" "}
                 <a href="mailto:support@reatch.io" className="text-primary hover:underline">

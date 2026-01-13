@@ -8,10 +8,7 @@ import { Mail, MessageSquare, Send } from "lucide-react";
 import { useState } from "react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { Resend } from 'resend';
-
-const resend = new Resend('re_ZpY6jPmd_D8bQcHmd9aG21rjFcAMd3tBr');
-
+import { useForm, ValidationError } from '@formspree/react';
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -42,64 +39,7 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const result = contactSchema.safeParse(formData);
-    
-    if (!result.success) {
-      const fieldErrors: Partial<Record<keyof ContactFormData, string>> = {};
-      result.error.errors.forEach((error) => {
-        const field = error.path[0] as keyof ContactFormData;
-        fieldErrors[field] = error.message;
-      });
-      setErrors(fieldErrors);
-      setIsSubmitting(false);
-      return;
-    }
-
-    const { name, email, subject, message } = formData;
-
-
-    const html = `
-      <h1>New Contact Form Submission</h1>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Subject:</strong> ${subject}</p>
-      <p><strong>Message:</strong></p>
-      <p>${message.replace(/\n/g, '<br>')}</p>
-    `;
-
-    try {
-        const { data, error } = resend.emails.send({
-          from: 'rafat.albarouki@gmail.com',
-          to: 'admin@reatch.io',
-          subject: "Customer request: " + subject,
-          html: html
-        });
-
-        if (error) {
-            toast({
-               title: "Failed to send message!",
-               description: "We could not send the message, please try again later.",
-             });
-        }
-      } catch (error) {
-        toast({
-           title: "Failed to send message!",
-           description: "We could not send the message, please try again later.",
-         });
-      }
-    
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
-
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setIsSubmitting(false);
-  };
+  const [state, handleSubmit] = useForm("xwvvkwwa");
 
   return (
     <div className="min-h-screen bg-background">

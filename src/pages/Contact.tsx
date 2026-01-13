@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, MessageSquare, Send } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { useForm, ValidationError } from '@formspree/react';
@@ -40,6 +40,55 @@ const Contact = () => {
   };
 
   const [state, handleSubmit] = useForm("xwvvkwwa");
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Validate form data
+    const validation = contactSchema.safeParse(formData);
+
+    if (!validation.success) {
+      const fieldErrors: Partial<Record<keyof ContactFormData, string>> = {};
+      validation.error.errors.forEach((err) => {
+        if (err.path[0]) {
+          fieldErrors[err.path[0] as keyof ContactFormData] = err.message;
+        }
+      });
+      setErrors(fieldErrors);
+      return;
+    }
+
+    setIsSubmitting(true);
+    await handleSubmit(e);
+  };
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you as soon as possible.",
+      });
+
+      // Clear form fields
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+      setIsSubmitting(false);
+    }
+
+    if (state.errors && state.errors.length > 0) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+    }
+  }, [state.succeeded, state.errors, toast]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -81,7 +130,7 @@ const Contact = () => {
             <div className="lg:col-span-2 bg-card rounded-2xl border border-border p-8">
               <h2 className="text-2xl font-bold text-foreground mb-6">Send us a message</h2>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleFormSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
@@ -137,7 +186,6 @@ const Contact = () => {
                   />
                   {errors.message && <p className="text-sm text-destructive">{errors.message}</p>}
                 </div>
-
                 <Button type="submit" variant="hero" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? "Sending..." : "Send Message"}
                   <Send className="w-4 h-4 ml-2" />

@@ -8,6 +8,10 @@ import { Mail, MessageSquare, Send } from "lucide-react";
 import { useState } from "react";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
+import { Resend } from 'resend';
+
+const resend = new Resend('re_ZpY6jPmd_D8bQcHmd9aG21rjFcAMd3tBr');
+
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -55,8 +59,38 @@ const Contact = () => {
       return;
     }
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const { name, email, subject, message } = formData;
+
+
+    const html = `
+      <h1>New Contact Form Submission</h1>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Subject:</strong> ${subject}</p>
+      <p><strong>Message:</strong></p>
+      <p>${message.replace(/\n/g, '<br>')}</p>
+    `;
+
+    try {
+        const { data, error } = resend.emails.send({
+          from: 'rafat.albarouki@gmail.com',
+          to: 'admin@reatch.io',
+          subject: "Customer request: " + subject,
+          html: html
+        });
+
+        if (error) {
+            toast({
+               title: "Failed to send message!",
+               description: "We could not send the message, please try again later.",
+             });
+        }
+      } catch (error) {
+        toast({
+           title: "Failed to send message!",
+           description: "We could not send the message, please try again later.",
+         });
+      }
     
     toast({
       title: "Message sent!",

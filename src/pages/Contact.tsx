@@ -75,17 +75,6 @@ const Contact = () => {
                   support@reatch.io
                 </a>
               </div>
-
-              <div className="bg-card rounded-xl border border-border p-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                  <MessageSquare className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">Live Chat</h3>
-                <p className="text-sm text-muted-foreground mb-2">
-                  Available Mon-Fri, 9am-6pm
-                </p>
-                <span className="text-primary">Coming soon</span>
-              </div>
             </div>
 
             {/* Contact Form */}

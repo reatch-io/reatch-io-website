@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * IndexNow Submission Script for Reatch.io
+ * IndexNow Submission Script for Reachfy.io
  *
  * This script submits URLs to IndexNow API to notify search engines
  * (Bing, Yandex, etc.) about new or updated content on your website.
@@ -18,17 +18,17 @@ const https = require('https');
 
 // Configuration
 const config = {
-  host: 'reatch.io',
+  host: 'reachfy.io',
   key: '144fc473b47344079fee0356e1e54c68',
-  keyLocation: 'https://reatch.io/144fc473b47344079fee0356e1e54c68.txt',
+  keyLocation: 'https://reachfy.io/144fc473b47344079fee0356e1e54c68.txt',
   urlList: [
-    'https://reatch.io/',
-    'https://reatch.io/pricing',
-    'https://reatch.io/about',
-    'https://reatch.io/contact',
-    'https://reatch.io/privacy',
-    'https://reatch.io/terms',
-    'https://reatch.io/refund',
+    'https://reachfy.io/',
+    'https://reachfy.io/pricing',
+    'https://reachfy.io/about',
+    'https://reachfy.io/contact',
+    'https://reachfy.io/privacy',
+    'https://reachfy.io/terms',
+    'https://reachfy.io/refund',
   ]
 };
 

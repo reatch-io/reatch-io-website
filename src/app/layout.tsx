@@ -3,7 +3,7 @@ import "../index.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://reatch.io"),
+  metadataBase: new URL("https://reachfy.io"),
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   title: {
-    default: "Reatch.io — Customer Engagement Platform | Email & WhatsApp Marketing",
-    template: "%s | Reatch.io",
+    default: "Reachfy.io — Customer Engagement Platform | Email & WhatsApp Marketing",
+    template: "%s | Reachfy.io",
   },
   description:
-    "Connect, communicate, and convert with Reatch.io. Intelligent email and WhatsApp campaigns, advanced segmentation, real-time analytics, and powerful automation for growth-minded teams.",
+    "Connect, communicate, and convert with Reachfy.io. Intelligent email and WhatsApp campaigns, advanced segmentation, real-time analytics, and powerful automation for growth-minded teams.",
   keywords: [
     "customer engagement",
     "email marketing",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "multi-channel marketing",
   ],
   openGraph: {
-    siteName: "Reatch.io",
+    siteName: "Reachfy.io",
     images: [{ url: "/reatch-logo.png" }],
   },
   twitter: {

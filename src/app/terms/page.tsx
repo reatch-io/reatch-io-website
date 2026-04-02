@@ -4,24 +4,24 @@ import Footer from "@/components/Footer";
 import { articleSchema } from "@/utils/structuredData";
 
 const schema = articleSchema({
-  title: "Terms of Service — Reatch.io",
+  title: "Terms of Service — Reachfy.io",
   description:
-    "Terms and Conditions for using Reatch.io customer engagement platform",
+    "Terms and Conditions for using Reachfy.io customer engagement platform",
   datePublished: "2026-01-11",
   dateModified: "2026-01-11",
 });
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Reatch.io",
+  title: "Terms of Service — Reachfy.io",
   description:
-    "Read the Terms of Service for Reatch.io. Understand your rights and responsibilities when using our customer engagement platform.",
-  alternates: { canonical: "https://reatch.io/terms" },
+    "Read the Terms of Service for Reachfy.io. Understand your rights and responsibilities when using our customer engagement platform.",
+  alternates: { canonical: "https://reachfy.io/terms" },
   openGraph: {
     type: "website",
-    title: "Terms of Service — Reatch.io",
+    title: "Terms of Service — Reachfy.io",
     description:
-      "Read the Terms of Service for Reatch.io. Understand your rights and responsibilities.",
-    url: "https://reatch.io/terms",
+      "Read the Terms of Service for Reachfy.io. Understand your rights and responsibilities.",
+    url: "https://reachfy.io/terms",
   },
 };
 
@@ -48,7 +48,7 @@ export default function TermsOfServicePage() {
                 1. Acceptance of Terms
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing or using the ReatchIO platform ("Reatch", "we",
+                By accessing or using the ReachfyIO platform ("Reachfy", "we",
                 "our", or "us"), you agree to be bound by these Terms &
                 Conditions and all applicable laws and regulations. If you do
                 not agree, you must not use our Services.
@@ -60,7 +60,7 @@ export default function TermsOfServicePage() {
                 2. Description of Services
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                ReatchIO provides a customer engagement platform that enables
+                ReachfyIO provides a customer engagement platform that enables
                 businesses to communicate with their customers through channels
                 such as email and WhatsApp. Our Services include message
                 delivery, campaign management, analytics, and related engagement
@@ -112,7 +112,7 @@ export default function TermsOfServicePage() {
                 5. Payments, Billing &amp; Refunds
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                ReatchIO operates on a subscription and/or usage-based pricing
+                ReachfyIO operates on a subscription and/or usage-based pricing
                 model. Fees are charged in advance and are non-refundable,
                 except where required by law or as stated in our Refund Policy.
                 Message credits are deducted upon use, including attempted or
@@ -127,7 +127,7 @@ export default function TermsOfServicePage() {
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 Message delivery is dependent on third-party providers,
-                recipient networks, and user data accuracy. ReatchIO does not
+                recipient networks, and user data accuracy. ReachfyIO does not
                 guarantee message delivery or response rates and is not
                 responsible for blocked, filtered, or undelivered messages.
               </p>
@@ -139,7 +139,7 @@ export default function TermsOfServicePage() {
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 All content, software, and platform features are owned by
-                ReatchIO or its licensors and are protected by intellectual
+                ReachfyIO or its licensors and are protected by intellectual
                 property laws. You may not copy, modify, distribute, or reverse
                 engineer any part of the Services without written permission.
               </p>
@@ -150,7 +150,7 @@ export default function TermsOfServicePage() {
                 8. Limitation of Liability
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                To the maximum extent permitted by law, ReatchIO shall not be
+                To the maximum extent permitted by law, ReachfyIO shall not be
                 liable for any indirect, incidental, consequential, or punitive
                 damages, including loss of profits, data, or business
                 opportunities, arising from your use of the Services.
@@ -199,10 +199,10 @@ export default function TermsOfServicePage() {
                 If you have any questions regarding these Terms & Conditions,
                 please contact us at{" "}
                 <a
-                  href="mailto:legal@reatch.io"
+                  href="mailto:legal@reachfy.io"
                   className="text-primary hover:underline"
                 >
-                  legal@reatch.io
+                  legal@reachfy.io
                 </a>
               </p>
             </section>

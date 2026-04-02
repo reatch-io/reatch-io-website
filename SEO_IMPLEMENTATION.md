@@ -1,7 +1,7 @@
-# SEO Implementation Guide for Reatch.io
+# SEO Implementation Guide for Reachfy.io
 
 ## Overview
-This document outlines all the SEO improvements implemented for the Reatch.io website.
+This document outlines all the SEO improvements implemented for the Reachfy.io website.
 
 ## ✅ What Was Implemented
 
@@ -30,7 +30,7 @@ Created comprehensive structured data helpers in `src/utils/structuredData.ts`:
 ### 3. **Page-Specific SEO Implementation**
 
 #### Home Page (`/`)
-- Title: "Reatch.io — Customer Engagement Platform | Email & WhatsApp Marketing"
+- Title: "Reachfy.io — Customer Engagement Platform | Email & WhatsApp Marketing"
 - Rich keywords targeting customer engagement, email/WhatsApp marketing
 - Combined structured data (Organization + Website + SoftwareApplication)
 - Priority: 1.0 in sitemap
@@ -99,8 +99,8 @@ Updated `public/robots.txt` with:
 
 ### 8. **Social Media Links** 🔗 NEW
 Footer now includes:
-- GitHub: https://github.com/reatch-io
-- LinkedIn: https://www.linkedin.com/company/reatch-io
+- GitHub: https://github.com/reachfy-io
+- LinkedIn: https://www.linkedin.com/company/reachfy-io
 - Both links open in new windows with proper security attributes
 
 ## 📊 SEO Benefits
@@ -222,7 +222,7 @@ const MyPage = () => {
 ### Short Term (1-2 weeks)
 1. **Submit sitemap to Google Search Console**
    - URL: https://search.google.com/search-console
-   - Submit: https://reatch.io/sitemap.xml
+   - Submit: https://reachfy.io/sitemap.xml
 
 2. **Submit sitemap to Bing Webmaster Tools**
    - URL: https://www.bing.com/webmasters
@@ -321,8 +321,8 @@ const MyPage = () => {
 3. Request re-indexing via Google Search Console
 4. Wait 2-7 days for Google to re-crawl and update
 5. Check that all files are accessible:
-   - https://reatch.io/reatch-logo.png
-   - https://reatch.io/site.webmanifest
+   - https://reachfy.io/reatch-logo.png
+   - https://reachfy.io/site.webmanifest
 
 ### Sitemap.xml Returns 404
 **Issue**: Sitemap not accessible in production

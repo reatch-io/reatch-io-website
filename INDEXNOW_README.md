@@ -1,4 +1,4 @@
-# IndexNow Integration for Reatch.io
+# IndexNow Integration for Reachfy.io
 
 ## What is IndexNow?
 
@@ -11,7 +11,7 @@ IndexNow is a protocol that allows website owners to instantly notify search eng
 Your IndexNow API key file is already in place:
 - File: `/public/144fc473b47344079fee0356e1e54c68.txt`
 - Key: `144fc473b47344079fee0356e1e54c68`
-- URL: `https://reatch.io/144fc473b47344079fee0356e1e54c68.txt`
+- URL: `https://reachfy.io/144fc473b47344079fee0356e1e54c68.txt`
 
 This file will be deployed with your site and must be accessible for verification.
 
@@ -71,13 +71,13 @@ You can add this to your deployment pipeline (e.g., Vercel, Netlify, GitHub Acti
 ## Current URLs Being Submitted
 
 The scripts submit these 7 pages:
-1. `https://reatch.io/` (Homepage)
-2. `https://reatch.io/pricing` (Pricing)
-3. `https://reatch.io/about` (About)
-4. `https://reatch.io/contact` (Contact)
-5. `https://reatch.io/privacy` (Privacy Policy)
-6. `https://reatch.io/terms` (Terms of Service)
-7. `https://reatch.io/refund` (Refund Policy)
+1. `https://reachfy.io/` (Homepage)
+2. `https://reachfy.io/pricing` (Pricing)
+3. `https://reachfy.io/about` (About)
+4. `https://reachfy.io/contact` (Contact)
+5. `https://reachfy.io/privacy` (Privacy Policy)
+6. `https://reachfy.io/terms` (Terms of Service)
+7. `https://reachfy.io/refund` (Refund Policy)
 
 ## Response Codes
 
@@ -98,7 +98,7 @@ IndexNow is supported by:
 
 **Note**: Google does NOT support IndexNow. For Google, use:
 - Google Search Console
-- Submit sitemap: `https://reatch.io/sitemap.xml`
+- Submit sitemap: `https://reachfy.io/sitemap.xml`
 - Request indexing via URL Inspection tool
 
 ## Adding New URLs
@@ -107,10 +107,10 @@ To submit new URLs, edit the `indexnow-submit.js` or `indexnow-submit.sh` file a
 
 ```javascript
 urlList: [
-  'https://reatch.io/',
-  'https://reatch.io/pricing',
+  'https://reachfy.io/',
+  'https://reachfy.io/pricing',
   // Add new URLs here
-  'https://reatch.io/blog/new-post'
+  'https://reachfy.io/blog/new-post'
 ]
 ```
 
@@ -124,7 +124,7 @@ After running the script, you can verify submission by:
 ## Troubleshooting
 
 ### 403 Forbidden Error
-- Make sure `https://reatch.io/144fc473b47344079fee0356e1e54c68.txt` is accessible
+- Make sure `https://reachfy.io/144fc473b47344079fee0356e1e54c68.txt` is accessible
 - The file should contain only the key: `144fc473b47344079fee0356e1e54c68`
 - Check there are no authentication/firewall blocks
 

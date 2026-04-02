@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://reatch.io/sitemap.xml
+Sitemap: https://reachfy.io/sitemap.xml
 
 # Crawl-delay (optional, adjust as needed)
 Crawl-delay: 1

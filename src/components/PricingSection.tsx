@@ -107,7 +107,7 @@ const PricingSection = () => {
             </div>
 
             <Button variant="hero" className="w-full"
-                    onClick={() => window.open("https://app.reatch.io", "_blank")}>
+                    onClick={() => window.open("https://app.reachfy.io", "_blank")}>
               Purchase TCoins <ArrowRight className="w-4 h-4" />
             </Button>
           </div>

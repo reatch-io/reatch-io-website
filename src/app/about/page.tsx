@@ -5,18 +5,18 @@ import { breadcrumbSchema } from "@/utils/structuredData";
 import { Users, Target, Zap, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us — Reatch.io | Empowering Business Communication",
+  title: "About Us — Reachfy.io | Empowering Business Communication",
   description:
-    "Learn about Reatch.io's mission to democratize customer engagement. Discover how we help businesses connect with customers through Email, WhatsApp, and SMS from one unified platform.",
+    "Learn about Reachfy.io's mission to democratize customer engagement. Discover how we help businesses connect with customers through Email, WhatsApp, and SMS from one unified platform.",
   keywords:
-    "about reatch, customer engagement platform, business communication, email marketing company, WhatsApp marketing platform",
-  alternates: { canonical: "https://reatch.io/about" },
+    "about reachfy, customer engagement platform, business communication, email marketing company, WhatsApp marketing platform",
+  alternates: { canonical: "https://reachfy.io/about" },
   openGraph: {
     type: "website",
-    title: "About Us — Reatch.io | Empowering Business Communication",
+    title: "About Us — Reachfy.io | Empowering Business Communication",
     description:
-      "Learn about Reatch.io's mission to democratize customer engagement.",
-    url: "https://reatch.io/about",
+      "Learn about Reachfy.io's mission to democratize customer engagement.",
+    url: "https://reachfy.io/about",
   },
 };
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
               Empowering Businesses to Connect
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              At Reatch.io, we believe every business deserves powerful tools to
+              At Reachfy.io, we believe every business deserves powerful tools to
               engage with their customers across every channel, without
               complexity.
             </p>
@@ -59,7 +59,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 We're on a mission to democratize customer engagement. Whether
-                you're a startup or an enterprise, Reatch.io provides the
+                you're a startup or an enterprise, Reachfy.io provides the
                 infrastructure to reach your customers via Email, WhatsApp, SMS,
                 and more — all from one unified platform.
               </p>
@@ -131,13 +131,13 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="mb-4">
-                Reatch.io was born from a simple observation: businesses were
+                Reachfy.io was born from a simple observation: businesses were
                 struggling to manage customer communications across multiple
                 channels. Email here, WhatsApp there, SMS somewhere else — it
                 was chaos.
               </p>
               <p className="mb-4">
-                We built Reatch.io to solve this problem. A single platform
+                We built Reachfy.io to solve this problem. A single platform
                 where you can manage all your customer outreach, track
                 engagement, and scale your communication efforts without
                 breaking the bank.

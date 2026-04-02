@@ -3,9 +3,9 @@
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Reatch.io",
-  "url": "https://reatch.io",
-  "logo": "https://reatch.io/reatch-logo.png",
+  "name": "Reachfy.io",
+  "url": "https://reachfy.io",
+  "logo": "https://reachfy.io/reatch-logo.png",
   "description": "Customer engagement platform for email and WhatsApp marketing with advanced automation and analytics",
   "sameAs": [
     // Add your social media profiles here
@@ -15,19 +15,19 @@ export const organizationSchema = {
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Customer Support",
-    "email": "support@reatch.io",
+    "email": "support@reachfy.io",
   }
 };
 
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Reatch.io",
-  "url": "https://reatch.io",
+  "name": "Reachfy.io",
+  "url": "https://reachfy.io",
   "description": "Customer Engagement Platform with Email & WhatsApp Marketing",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://reatch.io/search?q={search_term_string}",
+    "target": "https://reachfy.io/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 };
@@ -35,7 +35,7 @@ export const websiteSchema = {
 export const softwareApplicationSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Reatch.io",
+  "name": "Reachfy.io",
   "applicationCategory": "BusinessApplication",
   "offers": {
     "@type": "AggregateOffer",
@@ -59,7 +59,7 @@ export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
     "@type": "ListItem",
     "position": index + 1,
     "name": item.name,
-    "item": `https://reatch.io${item.url}`
+    "item": `https://reachfy.io${item.url}`
   }))
 });
 
@@ -92,16 +92,16 @@ export const articleSchema = (article: {
   "dateModified": article.dateModified,
   "author": {
     "@type": "Organization",
-    "name": article.author || "Reatch.io"
+    "name": article.author || "Reachfy.io"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Reatch.io",
+    "name": "Reachfy.io",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://reatch.io/reatch-logo.png"
+      "url": "https://reachfy.io/reatch-logo.png"
     }
   },
-  "image": article.image || "https://reatch.io/reatch-logo.png"
+  "image": article.image || "https://reachfy.io/reatch-logo.png"
 });
 

@@ -39,7 +39,7 @@ const HeroSection = () => {
           animationDelay: '0.3s'
         }}>
             <Button variant="hero" size="xl" asChild>
-              <a href="https://app.reatch.io" target="_blank" rel="noopener noreferrer">
+              <a href="https://app.reachfy.io" target="_blank" rel="noopener noreferrer">
                 Get started and get 10 free messages <ArrowRight className="w-5 h-5 ml-1" />
               </a>
             </Button>

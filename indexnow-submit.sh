@@ -11,9 +11,9 @@
 ###############################################################################
 
 # Configuration
-HOST="reatch.io"
+HOST="reachfy.io"
 KEY="144fc473b47344079fee0356e1e54c68"
-KEY_LOCATION="https://reatch.io/144fc473b47344079fee0356e1e54c68.txt"
+KEY_LOCATION="https://reachfy.io/144fc473b47344079fee0356e1e54c68.txt"
 
 # Build JSON payload
 PAYLOAD=$(cat <<EOF
@@ -22,13 +22,13 @@ PAYLOAD=$(cat <<EOF
   "key": "$KEY",
   "keyLocation": "$KEY_LOCATION",
   "urlList": [
-    "https://reatch.io/",
-    "https://reatch.io/pricing",
-    "https://reatch.io/about",
-    "https://reatch.io/contact",
-    "https://reatch.io/privacy",
-    "https://reatch.io/terms",
-    "https://reatch.io/refund"
+    "https://reachfy.io/",
+    "https://reachfy.io/pricing",
+    "https://reachfy.io/about",
+    "https://reachfy.io/contact",
+    "https://reachfy.io/privacy",
+    "https://reachfy.io/terms",
+    "https://reachfy.io/refund"
   ]
 }
 EOF
@@ -86,11 +86,11 @@ esac
 
 echo ""
 echo "📝 Submitted URLs:"
-echo "   1. https://reatch.io/"
-echo "   2. https://reatch.io/pricing"
-echo "   3. https://reatch.io/about"
-echo "   4. https://reatch.io/contact"
-echo "   5. https://reatch.io/privacy"
-echo "   6. https://reatch.io/terms"
-echo "   7. https://reatch.io/refund"
+echo "   1. https://reachfy.io/"
+echo "   2. https://reachfy.io/pricing"
+echo "   3. https://reachfy.io/about"
+echo "   4. https://reachfy.io/contact"
+echo "   5. https://reachfy.io/privacy"
+echo "   6. https://reachfy.io/terms"
+echo "   7. https://reachfy.io/refund"
 

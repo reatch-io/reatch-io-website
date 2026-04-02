@@ -5,18 +5,18 @@ import PricingSection from "@/components/PricingSection";
 import { breadcrumbSchema } from "@/utils/structuredData";
 
 export const metadata: Metadata = {
-  title: "Pricing Plans — Reatch.io Customer Engagement Platform",
+  title: "Pricing Plans — Reachfy.io Customer Engagement Platform",
   description:
-    "Choose the perfect plan for your business. From free tier to enterprise solutions, Reatch.io offers flexible pricing for email and WhatsApp marketing automation. Start free today!",
+    "Choose the perfect plan for your business. From free tier to enterprise solutions, Reachfy.io offers flexible pricing for email and WhatsApp marketing automation. Start free today!",
   keywords:
     "pricing, email marketing pricing, WhatsApp marketing cost, marketing automation pricing, customer engagement pricing, SaaS pricing",
-  alternates: { canonical: "https://reatch.io/pricing" },
+  alternates: { canonical: "https://reachfy.io/pricing" },
   openGraph: {
     type: "website",
-    title: "Pricing Plans — Reatch.io Customer Engagement Platform",
+    title: "Pricing Plans — Reachfy.io Customer Engagement Platform",
     description:
       "Choose the perfect plan for your business. Start free today!",
-    url: "https://reatch.io/pricing",
+    url: "https://reachfy.io/pricing",
   },
 };
 

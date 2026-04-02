@@ -4,23 +4,23 @@ import Footer from "@/components/Footer";
 import { articleSchema } from "@/utils/structuredData";
 
 const schema = articleSchema({
-  title: "Privacy Policy — Reatch.io",
-  description: "Privacy Policy for Reatch.io customer engagement platform",
+  title: "Privacy Policy — Reachfy.io",
+  description: "Privacy Policy for Reachfy.io customer engagement platform",
   datePublished: "2026-01-11",
   dateModified: "2026-01-11",
 });
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Reatch.io",
+  title: "Privacy Policy — Reachfy.io",
   description:
-    "Learn how Reatch.io collects, uses, and protects your data. Our privacy policy explains our commitment to protecting your information and privacy.",
-  alternates: { canonical: "https://reatch.io/privacy" },
+    "Learn how Reachfy.io collects, uses, and protects your data. Our privacy policy explains our commitment to protecting your information and privacy.",
+  alternates: { canonical: "https://reachfy.io/privacy" },
   openGraph: {
     type: "website",
-    title: "Privacy Policy — Reatch.io",
+    title: "Privacy Policy — Reachfy.io",
     description:
-      "Learn how Reatch.io collects, uses, and protects your data.",
-    url: "https://reatch.io/privacy",
+      "Learn how Reachfy.io collects, uses, and protects your data.",
+    url: "https://reachfy.io/privacy",
   },
 };
 
@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
                 1. Introduction
               </h2>
               <p className="leading-relaxed">
-                Reatch.io ("Reatch", "we", "our", or "us") is committed to
+                Reachfy.io ("Reachfy", "we", "our", or "us") is committed to
                 protecting your privacy. This Privacy Policy explains how we
                 collect, use, disclose, and safeguard your information when you
                 use our website, applications, and services (collectively, the
@@ -183,10 +183,10 @@ export default function PrivacyPolicyPage() {
                 If you have any questions about this Privacy Policy or our data
                 practices, please contact us at{" "}
                 <a
-                  href="mailto:privacy@reatch.io"
+                  href="mailto:privacy@reachfy.io"
                   className="text-primary hover:underline"
                 >
-                  privacy@reatch.io
+                  privacy@reachfy.io
                 </a>
               </p>
             </section>

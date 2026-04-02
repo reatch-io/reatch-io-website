@@ -15,19 +15,19 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Reatch.io — Customer Engagement Platform | Email & WhatsApp Marketing",
+    "Reachfy.io — Customer Engagement Platform | Email & WhatsApp Marketing",
   description:
-    "Connect, communicate, and convert with Reatch.io. Intelligent email and WhatsApp campaigns, advanced segmentation, real-time analytics, and powerful automation for growth-minded teams.",
+    "Connect, communicate, and convert with Reachfy.io. Intelligent email and WhatsApp campaigns, advanced segmentation, real-time analytics, and powerful automation for growth-minded teams.",
   keywords:
     "customer engagement, email marketing, WhatsApp marketing, marketing automation, campaign management, multi-channel marketing, customer communication platform, email campaigns, WhatsApp business API, marketing analytics, CRM integration, customer segmentation",
-  alternates: { canonical: "https://reatch.io" },
+  alternates: { canonical: "https://reachfy.io" },
   openGraph: {
     type: "website",
     title:
-      "Reatch.io — Customer Engagement Platform | Email & WhatsApp Marketing",
+      "Reachfy.io — Customer Engagement Platform | Email & WhatsApp Marketing",
     description:
-      "Connect, communicate, and convert with Reatch.io. Intelligent email and WhatsApp campaigns, advanced segmentation, real-time analytics, and powerful automation for growth-minded teams.",
-    url: "https://reatch.io",
+      "Connect, communicate, and convert with Reachfy.io. Intelligent email and WhatsApp campaigns, advanced segmentation, real-time analytics, and powerful automation for growth-minded teams.",
+    url: "https://reachfy.io",
   },
 };
 

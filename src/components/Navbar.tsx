@@ -11,8 +11,8 @@ const Navbar = () => {
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <a href="/" className="flex items-center gap-2">
-              <Image src={logo} alt="Reatch.io" width={36} height={36} className="w-9 h-9 object-contain"/>
-              <span className="text-xl font-bold text-foreground">Reatch.io</span>
+              <Image src={logo} alt="Reachfy.io" width={36} height={36} className="w-9 h-9 object-contain"/>
+              <span className="text-xl font-bold text-foreground">Reachfy.io</span>
             </a>
           </div>
 
@@ -29,10 +29,10 @@ const Navbar = () => {
 
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://app.reatch.io" target="_blank" rel="noopener noreferrer">Sign In</a>
+              <a href="https://app.reachfy.io" target="_blank" rel="noopener noreferrer">Sign In</a>
             </Button>
             <Button variant="hero" size="sm" asChild>
-              <a href="https://app.reatch.io" target="_blank" rel="noopener noreferrer">
+              <a href="https://app.reachfy.io" target="_blank" rel="noopener noreferrer">
                 Get Started <ArrowRight className="w-4 h-4"/>
               </a>
             </Button>

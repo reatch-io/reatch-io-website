@@ -134,10 +134,10 @@ export default function ContactClient() {
                   For general inquiries and support
                 </p>
                 <a
-                  href="mailto:support@reatch.io"
+                  href="mailto:support@reachfy.io"
                   className="text-primary hover:underline"
                 >
-                  support@reatch.io
+                  support@reachfy.io
                 </a>
               </div>
             </div>

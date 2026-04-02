@@ -4,23 +4,23 @@ import Footer from "@/components/Footer";
 import { articleSchema } from "@/utils/structuredData";
 
 const schema = articleSchema({
-  title: "Refund Policy — Reatch.io",
-  description: "Refund Policy for Reatch.io customer engagement platform",
+  title: "Refund Policy — Reachfy.io",
+  description: "Refund Policy for Reachfy.io customer engagement platform",
   datePublished: "2026-01-11",
   dateModified: "2026-01-11",
 });
 
 export const metadata: Metadata = {
-  title: "Refund Policy — Reatch.io",
+  title: "Refund Policy — Reachfy.io",
   description:
-    "Learn about Reatch.io's refund policy. Understand our terms for refunds and cancellations for our customer engagement platform services.",
-  alternates: { canonical: "https://reatch.io/refund" },
+    "Learn about Reachfy.io's refund policy. Understand our terms for refunds and cancellations for our customer engagement platform services.",
+  alternates: { canonical: "https://reachfy.io/refund" },
   openGraph: {
     type: "website",
-    title: "Refund Policy — Reatch.io",
+    title: "Refund Policy — Reachfy.io",
     description:
-      "Learn about Reatch.io's refund policy and cancellation terms.",
-    url: "https://reatch.io/refund",
+      "Learn about Reachfy.io's refund policy and cancellation terms.",
+    url: "https://reachfy.io/refund",
   },
 };
 
@@ -48,7 +48,7 @@ export default function RefundPolicyPage() {
               </h2>
               <p className="leading-relaxed">
                 This Refund Policy governs refunds for purchases made with
-                ReatchIO ("we", "us"). Payments are processed by our Merchant of
+                ReachfyIO ("we", "us"). Payments are processed by our Merchant of
                 Record, Paddle. Paddle's terms and refund procedures apply.
                 Paddle may issue refunds in accordance with applicable consumer
                 law and these policies.
@@ -70,10 +70,10 @@ export default function RefundPolicyPage() {
                 To ensure prompt handling, use the Paddle refund link in your
                 receipt email or contact us at{" "}
                 <a
-                  href="mailto:support@reatch.io"
+                  href="mailto:support@reachfy.io"
                   className="text-primary hover:underline"
                 >
-                  support@reatch.io
+                  support@reachfy.io
                 </a>
                 .
               </p>
@@ -98,7 +98,7 @@ export default function RefundPolicyPage() {
               </h2>
               <p className="leading-relaxed">
                 If you begin using digital services (such as accessing your
-                ReatchIO account or using message credits) within the 14-day
+                ReachfyIO account or using message credits) within the 14-day
                 period, you agree that this constitutes full performance of the
                 transaction and you lose the right to withdraw or refund for
                 that transaction.
@@ -131,7 +131,7 @@ export default function RefundPolicyPage() {
                 7. Chargebacks
               </h2>
               <p className="leading-relaxed">
-                If a chargeback or payment dispute is initiated, your ReatchIO
+                If a chargeback or payment dispute is initiated, your ReachfyIO
                 access may be suspended immediately. Paddle reserves the right
                 to refuse refunds in situations of fraud, refund abuse, or
                 manipulative behavior.
@@ -145,10 +145,10 @@ export default function RefundPolicyPage() {
               <p className="leading-relaxed">
                 For questions or assistance with refunds, contact us at{" "}
                 <a
-                  href="mailto:support@reatch.io"
+                  href="mailto:support@reachfy.io"
                   className="text-primary hover:underline"
                 >
-                  support@reatch.io
+                  support@reachfy.io
                 </a>
                 .
               </p>

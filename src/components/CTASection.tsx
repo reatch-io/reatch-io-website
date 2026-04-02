@@ -12,7 +12,7 @@ const CTASection = () => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Logo */}
           <div className="inline-flex items-center justify-center w-20 h-20 mb-8">
-            <Image src={logo} alt="Reatch.io" width={80} height={80} className="w-full h-full object-contain" />
+            <Image src={logo} alt="Reachfy.io" width={80} height={80} className="w-full h-full object-contain" />
           </div>
           
           {/* Headline */}
@@ -21,14 +21,14 @@ const CTASection = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Join thousands of businesses using Reatch.io to build stronger customer relationships. 
+            Join thousands of businesses using Reachfy.io to build stronger customer relationships. 
             Create your account now and get free messages — no credit card required.
           </p>
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="xl" asChild>
-              <a href="https://app.reatch.io" target="_blank" rel="noopener noreferrer">
+              <a href="https://app.reachfy.io" target="_blank" rel="noopener noreferrer">
                 Start Engaging <ArrowRight className="w-5 h-5 ml-1" />
               </a>
             </Button>

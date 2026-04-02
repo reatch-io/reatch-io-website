@@ -7,7 +7,7 @@ import { breadcrumbSchema } from "@/utils/structuredData";
 export const metadata: Metadata = {
   title: "Pricing Plans — Reachfy.io Customer Engagement Platform",
   description:
-    "Choose the perfect plan for your business. From free tier to enterprise solutions, Reachfy.io offers flexible pricing for email and WhatsApp marketing automation. Start free today!",
+    "Choose the perfect plan for your business. Free, Starter ($19/mo), Pro ($59/mo), and Agency ($399/mo) — flexible subscription pricing for email and WhatsApp marketing automation.",
   keywords:
     "pricing, email marketing pricing, WhatsApp marketing cost, marketing automation pricing, customer engagement pricing, SaaS pricing",
   alternates: { canonical: "https://reachfy.io/pricing" },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Pricing Plans — Reachfy.io Customer Engagement Platform",
     description:
-      "Choose the perfect plan for your business. Start free today!",
+      "Free, Starter, Pro, and Agency plans. Start free and scale as you grow.",
     url: "https://reachfy.io/pricing",
   },
 };
